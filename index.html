@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Notes</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Your Notes</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+ </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" id ="searchTxt" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container my-3">
+    <h1>Welcome to Your Notes</h1>
+    <div class="card">
+
+      <div class="card-body">
+        <h5 class="card-title">Add note title</h5>
+        <input type="text" class="form-control" id="cardTitle" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        <h5 class="card-title">Write Note</h5>
+        <div class="input-group mb-3">
+
+          <textarea id="addtxt" class="form-control" aria-label="With textarea"></textarea>
+        </div>
+        <button id="addBtn" class ="btn btn-primary">Add Note</button>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container">
+    <h3>Your saved notes</h3>
+  </div>
+
+  <div  id="notes" class="row container-fluid mx-5"> </div>
+
+ 
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="JS/app.js"></script> 
+</body>
+
+</html>
